@@ -1,0 +1,46 @@
+int a = 0 + 1;
+char b = 134 / 2 ;
+boolean c = 22 * 3;
+string e = -5 - -3;
+
+a == b;
+a >= b
+a <= b
+a != b
+
+array[3]
+array[-5]
+
+
+if( a < b ){
+    f = 7 - -8;
+    return;
+}else{
+    while(a > -5){
+
+
+    }
+}
+
+int k = 7 - -8
+(9) - (-5)
+
+'a', '1', ' ', '&'
+
+a = true
+b = false
+
+"Hello World" , "My student ID is 20200000"
+"#@(d2sm^,z."
+
+i, j, k, abc, ab_123, func1, func_, ___func_bar__
+
+if
+else
+while
+class
+return
+
+if1
+else2
+whilei

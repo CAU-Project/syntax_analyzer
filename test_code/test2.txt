@@ -1,0 +1,23 @@
+opClick=true;
+if(disp!=null) {
+    disp+=sb_toString();
+}else {
+    disp=sb_toString();
+}
+if(op==0){
+    result=Double_ParseDouble(sb_toString());
+    op=e_getActionCommand();
+    disp = disp + e_getActionCommand();
+    dispL_setText(disp);
+}else{
+    if(op >= 43){
+        result = result - 3;
+    }
+    if(op <= 44){
+        result = true;
+    }
+    if(op == 45){
+        return false;
+    }
+}
+				

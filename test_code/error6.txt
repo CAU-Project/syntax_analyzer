@@ -1,0 +1,4 @@
+int a = "*#$!ubSDA";
+int b = "*^@Jsanjn"
+int error = "dsasdad;
+int c = 3;

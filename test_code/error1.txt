@@ -1,0 +1,4 @@
+int a = 0 + 1;
+char b = 1 / 2 ;
+boolean c =022 * 3;
+string e = -5 - -3;
