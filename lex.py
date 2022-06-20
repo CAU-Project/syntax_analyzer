@@ -120,7 +120,7 @@ def main() -> None:
                     help='Enter file name')
     
     args = parser.parse_args()
-    filename = 'test_code/' + args.input    
+    filename = 'lex_code/' + args.input    
 
     with open(filename,"r") as fr:
         text = fr.read()
