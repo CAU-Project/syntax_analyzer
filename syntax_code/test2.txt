@@ -1,6 +1,7 @@
 int x = 0;
 char y = '2';
 int z = 4;
+
 boolean func(int x, int y, int z){
     if(true) {
         disp=sb_toString;

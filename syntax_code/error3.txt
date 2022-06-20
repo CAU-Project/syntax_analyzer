@@ -1,26 +1,9 @@
 int x = 0;
 char y = '2';
-int z = 4;
+
 boolean func(int x, int y,int z){
     if(a == 0) {
-        disp=sb_toString;
-        if(true == true){
-            }
-        else{
-            if(false){}
-        }
-    }else {
-        disp=sb_toString;
-    }
-    if(false){
-        result= (3 + 3) * 4;
-    }else{
-        if(true == true){
-            result = result - 3;
-        }
-        if(true != false){
-            result = true;
-        }
+        disp=sb_toString();
     }
     return false;
 }
