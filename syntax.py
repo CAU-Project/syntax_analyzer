@@ -148,6 +148,10 @@ def main() -> None:
     state_stack.append(0) 
     token_idx = 0
 
+    if debug:
+        print()
+        print("=========================== Syntax Analyze ===========================")
+
     while(True):
         try:
             next_input_symbol = token_list[0]
@@ -160,7 +164,7 @@ def main() -> None:
                 accept_token.append(token_list.pop(0))
                 token_idx+=1
                 if debug : print("\033[34m[Stack] :" + str(accept_token) + '\033[0m')
-                
+
             elif(next_step[0] == 'r'):
                 # Reduce 
                 # RHS 갯수만큼 스택 pop
