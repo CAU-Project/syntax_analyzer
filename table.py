@@ -146,7 +146,7 @@ State_table = [
     'ERR'                  # Unavailabe Input Character
 ]
 
-LR_table = [
+SLR_table = [
     {'vtype' : 's2','VDECL':'G1'},
     {'vtype' : 's6','class' : 's7','$' : 'r3','CODE':'G3','VDECL':'G1','FDECL':'G4','CDECL':'G5'},
     {'id' : 's8','ASSIGN':'G9'},

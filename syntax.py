@@ -1,6 +1,6 @@
 from lex import lexical
 import argparse
-from table import LR_table, Reduce_table
+from table import SLR_table, Reduce_table
 import time
 
 '''
@@ -151,10 +151,8 @@ def main() -> None:
     while(True):
         try:
             next_input_symbol = token_list[0]
-            current_state = state_stack[-1]
-
-            
-            next_step = LR_table[current_state][next_input_symbol]
+            current_state = state_stack[-1]         
+            next_step = SLR_table[current_state][next_input_symbol]
         
             if(next_step[0] == 's'):
                 # shift and goto
@@ -162,6 +160,7 @@ def main() -> None:
                 accept_token.append(token_list.pop(0))
                 token_idx+=1
                 if debug : print("\033[34m[Stack] :" + str(accept_token) + '\033[0m')
+                
             elif(next_step[0] == 'r'):
                 # Reduce 
                 # RHS 갯수만큼 스택 pop
@@ -175,7 +174,7 @@ def main() -> None:
                 # GOTO(current state,LHS) into the stack
                 current_state = int(state_stack[-1])
                 next_GOTO = reduce_LHS
-                next_step = LR_table[current_state][next_GOTO]
+                next_step = SLR_table[current_state][next_GOTO]
                 
                 state_stack.append(int(next_step[1:]))
                 accept_token.append(reduce_LHS)
