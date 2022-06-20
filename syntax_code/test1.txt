@@ -1,0 +1,14 @@
+int a = 0 + 1;
+char b = 134 / 2 ;
+boolean c = 22 * 3;
+string e = -5 - -3;
+
+class testClass {
+    int testFunc(int a, int b){
+        int val1 = (3*3) + (3/2);
+        int val2 = 3 * val1;
+        return val2;
+    }
+    int classVal;
+    int classVal2 = 3;
+}
