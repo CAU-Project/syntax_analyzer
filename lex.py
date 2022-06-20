@@ -93,7 +93,7 @@ def lexical(text) -> list:
                     token = 'Bool'
                     
             if token != 'WHITESPACE': # WHITESPACE Token is ommitted in result. i
-                token_result.append({'token' : token ,'lexeme' : lexeme})
+                token_result.append({'token' : token ,'lexeme' : lexeme, 'line_num' : line_num})
 
             if token == 'WHITESPACE' and lexeme == '\n':    # for report error save line_num
                 line_num += 1
